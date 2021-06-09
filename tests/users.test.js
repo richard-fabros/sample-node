@@ -12,7 +12,7 @@ test("Invalid email is rejected", () => {
     createUser("John", "Doe", "johndoesfakeemail", {
       userRepository: new UserRepository(),
     });
-  }).to
+  }).toThrow("User failed email validation");
 });
 
 // test("Valid email is accepted", () => {

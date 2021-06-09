@@ -19,8 +19,11 @@
     "jest": "^26.6.3"
   },
   "scripts": {
+    "say-hello": "echo hello",
     "test": "jest",
-    "lint": "./node_modules/.bin/eslint ./lib/** --quiet"
+    "lint": "npx eslint ./lib/**",
+    "start": "node index.js",
+    "start-dev": "npx nodemon index.js"
   },
   "author": "",
   "license": "ISC"
