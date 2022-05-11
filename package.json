@@ -10,7 +10,9 @@
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.6",
     "express-session": "^1.17.1",
-    "helmet": "^4.5.0"
+    "helmet": "^4.5.0",
+    "logform": "^2.4.0",
+    "winston": "^3.7.2"
   },
   "devDependencies": {
     "eslint": "^7.25.0",
@@ -23,7 +25,8 @@
     "test": "jest",
     "lint": "npx eslint ./lib/**",
     "start": "node index.js",
-    "start-dev": "npx nodemon index.js"
+    "start-dev": "npx nodemon index.js",
+    "boilerplate:express": "node ./boilerplates/express/app.js"
   },
   "author": "",
   "license": "ISC"
